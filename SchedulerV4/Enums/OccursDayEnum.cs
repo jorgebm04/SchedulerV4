@@ -7,7 +7,8 @@
             First,
             Second,
             Third,
-            Fourth
+            Fourth,
+            Last
         }
     }
 }

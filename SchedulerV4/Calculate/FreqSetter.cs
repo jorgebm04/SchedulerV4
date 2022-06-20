@@ -6,26 +6,24 @@ namespace SchedulerV4.Calculate
     {
         public static String SetFreq(Settings settings)
         {
-            string freq;
-            if (settings.MonthlyFreq == (int)OccursDayEnum.OccursDay.First)
+            string freq = "";
+            switch (settings.MonthlyFreq)
             {
-                freq = FreqLanguage.SetFreqFirstInLanguage(settings);
-            }
-            else if (settings.MonthlyFreq == (int)OccursDayEnum.OccursDay.Second)
-            {
-                freq = FreqLanguage.SetFreqSecondInLanguage(settings);
-            }
-            else if (settings.MonthlyFreq == (int)OccursDayEnum.OccursDay.Third)
-            {
-                freq = FreqLanguage.SetFreqThirdInLanguage(settings);
-            }
-            else if (settings.MonthlyFreq == (int)OccursDayEnum.OccursDay.Fourth)
-            {
-                freq = FreqLanguage.SetFreqFourthInLanguage(settings);
-            }
-            else
-            {
-                freq = FreqLanguage.SetFreqLastInLanguage(settings);
+                case (int)OccursDayEnum.OccursDay.First:
+                    freq = FreqLanguage.SetFreqFirstInLanguage(settings);
+                    break;
+                case (int)OccursDayEnum.OccursDay.Second:
+                    freq = FreqLanguage.SetFreqSecondInLanguage(settings);
+                    break;
+                case (int)OccursDayEnum.OccursDay.Third:
+                    freq = FreqLanguage.SetFreqThirdInLanguage(settings);
+                    break;
+                case (int)OccursDayEnum.OccursDay.Fourth:
+                    freq = FreqLanguage.SetFreqFourthInLanguage(settings);
+                    break;
+                case (int)OccursDayEnum.OccursDay.Last:
+                    freq = FreqLanguage.SetFreqLastInLanguage(settings);
+                    break;
             }
             return freq;
         }

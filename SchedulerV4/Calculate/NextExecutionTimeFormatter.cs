@@ -10,13 +10,13 @@ namespace SchedulerV4.Calculate
             switch (settings.Language)
             {
                 case (int)LanguageEnum.Language.Español:
-                    settings.NextExecutionTime = date.ToString("dd/MM/yyyy HH:mm");
+                    settings.NextExecutionTime = date.ToString("g", CultureInfo.GetCultureInfo("es-ES"));
                     break;
                 case (int)LanguageEnum.Language.EnglishUK:
-                    settings.NextExecutionTime = date.ToString("dd/MM/yyyy HH:mm");
+                    settings.NextExecutionTime = date.ToString("g", CultureInfo.GetCultureInfo("en-UK"));
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
-                    settings.NextExecutionTime = date.ToString("MM/dd/yyyy HH:mm");
+                    settings.NextExecutionTime = date.ToString("g", CultureInfo.GetCultureInfo("en-US"));
                     break;
             }
             #pragma warning disable CS8603 // Possible null reference return.
