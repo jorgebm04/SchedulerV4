@@ -20,7 +20,7 @@ namespace SchedulerV4.Calculate
                     culture = new CultureInfo("en-US", true);
                     break;
             }
-            return settings.NextExecutionTime = date.ToString("g", culture); ;
+            return settings.NextExecutionTime = date.ToString("g", culture);
         }
     }
 }

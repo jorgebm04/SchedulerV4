@@ -37,7 +37,7 @@ namespace SchedulerV4.Calculate
                 case (int)DayFreqEnum.DayFreq.Saturday:
                     day = DayOfWeek.Saturday;
                     result = CalculateTheDay.Calculate(day, settings.CurrentDate, settings.MonthlyFreq);
-                    settings.DayOfTheWeek = "saturday"; ;
+                    settings.DayOfTheWeek = "saturday";
                     break;
                 case (int)DayFreqEnum.DayFreq.Sunday:
                     day = DayOfWeek.Sunday;
