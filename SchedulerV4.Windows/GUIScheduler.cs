@@ -2,6 +2,7 @@ using SchedulerV4.Calculate;
 using SchedulerV4.Checks;
 using SchedulerV4.Descriptions;
 using SchedulerV4.Enums;
+using System.Globalization;
 
 namespace SchedulerV4.Windows
 {
@@ -109,7 +110,7 @@ namespace SchedulerV4.Windows
                     startLimitDateTimePicker.CustomFormat = "dd/MM/yyyy";
                     endLimitDateTimePicker.CustomFormat = "dd/MM/yyyy";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     currentDateDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
                     onceTimeAtDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
                     occursOnceAtDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";

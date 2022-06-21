@@ -5,7 +5,7 @@
         public enum Language
         {
             Español,
-            EnglishUK,
+            EnglishGB,
             EnglishUS
         }
     }

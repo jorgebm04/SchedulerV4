@@ -158,7 +158,7 @@
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             "Español",
-            "English UK",
+            "English GB",
             "English US"});
             this.languageComboBox.Location = new System.Drawing.Point(535, 26);
             this.languageComboBox.Name = "languageComboBox";

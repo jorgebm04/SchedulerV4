@@ -2,7 +2,7 @@
 using SchedulerV4.Checks;
 using Xunit;
 
-namespace SchedulerV4.Test.Checks_Test
+namespace SchedulerV4.Test.EnglishUS_Tests.Checks_Tests
 {
     public class CheckLanguageTests
     {

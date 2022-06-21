@@ -12,7 +12,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "primer";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "first";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -30,7 +30,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "segundo";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "second";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -48,7 +48,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "tercer";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "third";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -66,7 +66,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "cuarto";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "fourth";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -84,7 +84,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "último";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "last";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:

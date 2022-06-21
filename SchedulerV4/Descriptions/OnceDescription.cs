@@ -7,19 +7,24 @@ namespace SchedulerV4.Descriptions
     {
         public static void SetDescription(Settings settings)
         {
+            _ = CultureInfo.CurrentCulture;
+            CultureInfo culture;
             switch (settings.Language)
             {
                 case (int)LanguageEnum.Language.Español:
-                    settings.Description = "Ocurre una vez. El planificador se usara el " + settings.CalculatedDate.ToString("d", CultureInfo.GetCultureInfo("es-ES")) + " a las " +
-                        settings.CalculatedDate.ToString("t", CultureInfo.GetCultureInfo("es-ES"));
+                    culture = new CultureInfo("es-ES", true);
+                    settings.Description = "Ocurre una vez. El planificador se usara el " + settings.CalculatedDate.ToString("d", culture) + " a las " +
+                        settings.CalculatedDate.ToString("t", culture);
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
-                    settings.Description = "Occurs once. Schedule will be used on " + settings.CalculatedDate.ToString("d", CultureInfo.GetCultureInfo("en-UK")) + " at " +
-                        settings.CalculatedDate.ToString("t", CultureInfo.GetCultureInfo("en-UK"));
+                case (int)LanguageEnum.Language.EnglishGB:
+                    culture = new CultureInfo("en-GB", true);
+                    settings.Description = "Occurs once. Schedule will be used on " + settings.CalculatedDate.ToString("d", culture) + " at " +
+                        settings.CalculatedDate.ToString("t", culture);
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
-                    settings.Description = "Occurs once. Schedule will be used on " + settings.CalculatedDate.ToString("d", CultureInfo.GetCultureInfo("en-US")) + " at " +
-                        settings.CalculatedDate.ToString("t", CultureInfo.GetCultureInfo("en-US"));
+                    culture = new CultureInfo("en-US", true);
+                    settings.Description = "Occurs once. Schedule will be used on " + settings.CalculatedDate.ToString("d", culture) + " at " +
+                        settings.CalculatedDate.ToString("t", culture);
                     break;
             }
         }

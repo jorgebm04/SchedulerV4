@@ -12,7 +12,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "lunes";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "monday";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -30,7 +30,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "martes";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "tuesday";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -48,7 +48,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "miercoles";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "wednesday";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -66,7 +66,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "jueves";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "thursday";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -84,7 +84,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "viernes";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "friday";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -102,7 +102,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "sabado";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "saturday";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -120,7 +120,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "domingo";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "sunday";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -138,7 +138,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "dia";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "day";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -156,7 +156,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "dia de la semana";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "week day";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
@@ -174,7 +174,7 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "dia de fin de semana";
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
+                case (int)LanguageEnum.Language.EnglishGB:
                     result = "weekend day";
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:

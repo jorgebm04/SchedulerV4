@@ -15,9 +15,9 @@ namespace SchedulerV4.Descriptions
                         settings.Description = "Ocurre cada dia " + settings.NumDay + " cada " + settings.NumMonths +
                             " meses. El planificador se usará a las " + settings.CalculatedDate.ToString("t", CultureInfo.GetCultureInfo("es-ES")) + ", empezando el " + settings.StartingLimit.ToString("d", CultureInfo.GetCultureInfo("es-ES"));
                         break;
-                    case (int)LanguageEnum.Language.EnglishUK:
+                    case (int)LanguageEnum.Language.EnglishGB:
                         settings.Description = "Occurs every " + settings.NumDay + " day, every " + settings.NumMonths +
-                            " months. Schedule will be used at " + settings.CalculatedDate.ToString("t", CultureInfo.GetCultureInfo("en-UK")) + " starting on " + settings.StartingLimit.ToString("d", CultureInfo.GetCultureInfo("en-UK"));
+                            " months. Schedule will be used at " + settings.CalculatedDate.ToString("t", CultureInfo.GetCultureInfo("en-GB")) + " starting on " + settings.StartingLimit.ToString("d", CultureInfo.GetCultureInfo("en-GB"));
                         break;
                     case (int)LanguageEnum.Language.EnglishUS:
                         settings.Description = "Occurs every " + settings.NumDay + " day, every " + settings.NumMonths +

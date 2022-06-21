@@ -2,12 +2,15 @@ using FluentAssertions;
 using SchedulerV4.Checks;
 using SchedulerV4.Descriptions;
 using System;
+using System.Globalization;
 using Xunit;
 
-namespace SchedulerV4.Test.Checks_Test
+namespace SchedulerV4.Test.Spanish_Tests.Checks_Tests
 {
     public class CheckOnceSettingsTests
     {
+        private readonly CultureInfo culture = new("es-ES");
+
         [Fact]
         public void Validate_incorrect_current_date_checker_settings()
         {
@@ -28,13 +31,14 @@ namespace SchedulerV4.Test.Checks_Test
             //Arrange
             var settings = new Settings
             {
+                Language = 0,
                 CalculatedDate = new DateTime(2022, 06, 16, 10, 0, 0)
             };
             //Act
             OnceDescription.SetDescription(settings);
             //Assert
-            settings.Description.Should().Be("Occurs once. Schedule will be used on " + settings.CalculatedDate.ToString("dd'/'MM'/'yyyy") + " at " +
-                        settings.CalculatedDate.ToString("HH:mm"));
+            settings.Description.Should().BeEquivalentTo("Ocurre una vez. El planificador se usara el " + settings.CalculatedDate.ToString("d", culture) + " a las " +
+                        settings.CalculatedDate.ToString("t", culture));
         }
 
         [Fact]

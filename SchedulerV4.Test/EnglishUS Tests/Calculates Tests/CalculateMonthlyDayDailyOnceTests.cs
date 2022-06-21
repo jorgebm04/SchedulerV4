@@ -1,11 +1,14 @@
 ﻿using Xunit;
 using FluentAssertions;
 using SchedulerV4.Calculate;
+using System.Globalization;
 
-namespace SchedulerV4.Test.Calculates_Test
+namespace SchedulerV4.Test.EnglishUS_Tests.Calculates_Tests
 {
     public class CalculateMonthlyDayDailyOnceTests
     {
+        private readonly CultureInfo culture = new("en-US");
+
         //-------------------- NOT IN LIMITS -------------------//
         [Fact]
         public void Validate_calculated_date_type_recurring_monthly_not_in_limits()
@@ -37,6 +40,7 @@ namespace SchedulerV4.Test.Calculates_Test
             //Arrange
             var settings = new Settings
             {
+                Language = 2,
                 CurrentDate = new System.DateTime(2022, 06, 09, 8, 10, 0),
                 Occurs = 1,
                 NumDay = 15,
@@ -51,8 +55,9 @@ namespace SchedulerV4.Test.Calculates_Test
             var expectedDate = new System.DateTime(2022, 08, 15, 14, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
+            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            settings.NextExecutionTime.Should().Be(expectedDate.ToString("dd/MM/yyyy") + " " + expectedDate.ToString("HH:mm"));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
         }
 
         [Fact]
@@ -61,6 +66,7 @@ namespace SchedulerV4.Test.Calculates_Test
             //Arrange
             var settings = new Settings
             {
+                Language = 2,
                 CurrentDate = new System.DateTime(2022, 06, 09, 8, 10, 0),
                 Occurs = 1,
                 NumDay = 15,
@@ -75,8 +81,9 @@ namespace SchedulerV4.Test.Calculates_Test
             var expectedDate = new System.DateTime(2022, 06, 15, 14, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
+            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            settings.NextExecutionTime.Should().Be(expectedDate.ToString("dd/MM/yyyy") + " " + expectedDate.ToString("HH:mm"));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
         }
 
 
@@ -86,6 +93,7 @@ namespace SchedulerV4.Test.Calculates_Test
             //Arrange
             var settings = new Settings
             {
+                Language = 2,
                 CurrentDate = new System.DateTime(2022, 06, 09, 8, 10, 0),
                 Occurs = 1,
                 NumDay = 9,
@@ -100,8 +108,9 @@ namespace SchedulerV4.Test.Calculates_Test
             var expectedDate = new System.DateTime(2022, 06, 9, 14, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
+            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            settings.NextExecutionTime.Should().Be(expectedDate.ToString("dd/MM/yyyy") + " " + expectedDate.ToString("HH:mm"));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
         }
 
         [Fact]
@@ -110,6 +119,7 @@ namespace SchedulerV4.Test.Calculates_Test
             //Arrange
             var settings = new Settings
             {
+                Language = 2,
                 CurrentDate = new System.DateTime(2022, 06, 09, 10, 10, 0),
                 Occurs = 1,
                 NumDay = 9,
@@ -124,8 +134,9 @@ namespace SchedulerV4.Test.Calculates_Test
             var expectedDate = new System.DateTime(2022, 08, 9, 8, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
+            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            settings.NextExecutionTime.Should().Be(expectedDate.ToString("dd/MM/yyyy") + " " + expectedDate.ToString("HH:mm"));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
         }
 
         [Fact]
@@ -134,6 +145,7 @@ namespace SchedulerV4.Test.Calculates_Test
             //Arrange
             var settings = new Settings
             {
+                Language = 2,
                 CurrentDate = new System.DateTime(2022, 06, 09, 10, 10, 0),
                 Occurs = 1,
                 NumDay = 7,
@@ -148,8 +160,9 @@ namespace SchedulerV4.Test.Calculates_Test
             var expectedDate = new System.DateTime(2022, 08, 7, 8, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
+            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            settings.NextExecutionTime.Should().Be(expectedDate.ToString("dd/MM/yyyy") + " " + expectedDate.ToString("HH:mm"));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
         }
     }
 }

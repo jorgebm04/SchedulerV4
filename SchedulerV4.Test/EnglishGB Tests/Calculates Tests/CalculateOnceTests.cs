@@ -1,25 +1,30 @@
 ﻿using Xunit;
 using FluentAssertions;
 using SchedulerV4.Calculate;
+using System.Globalization;
 
-namespace SchedulerV4.Test.Calculates_Test
+namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
 {
     public class CalculateOnceTests
     {
+        private readonly CultureInfo culture = new("en-GB");
+
         [Fact]
         public void Validate_calculated_date_type_once()
         {
             //Arrange
             var settings = new Settings
             {
+                Language = 1,
                 CurrentDate = new System.DateTime(2022, 05, 27, 8, 10, 0),
                 OnceTimeAt = new System.DateTime(2022, 05, 30, 14, 0, 0)
             };
             var expectedDate = new System.DateTime(2022, 05, 30, 14, 0, 0);
             //Act
             CalculateOnce.CalculateNextExecutionTime(settings);
+            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            settings.NextExecutionTime.Should().Be(expectedDate.ToString("dd/MM/yyyy HH:mm"));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
         }
     }
 }

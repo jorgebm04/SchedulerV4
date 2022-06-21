@@ -7,21 +7,20 @@ namespace SchedulerV4.Calculate
     {
         public static string SetNextExeccutionTimeFormat(Settings settings, DateTime date)
         {
+            CultureInfo culture = CultureInfo.CurrentCulture;
             switch (settings.Language)
             {
                 case (int)LanguageEnum.Language.Español:
-                    settings.NextExecutionTime = date.ToString("g", CultureInfo.GetCultureInfo("es-ES"));
+                    culture = new CultureInfo("es-ES",true);
                     break;
-                case (int)LanguageEnum.Language.EnglishUK:
-                    settings.NextExecutionTime = date.ToString("g", CultureInfo.GetCultureInfo("en-UK"));
+                case (int)LanguageEnum.Language.EnglishGB:
+                    culture = new CultureInfo("en-GB", true);
                     break;
                 case (int)LanguageEnum.Language.EnglishUS:
-                    settings.NextExecutionTime = date.ToString("g", CultureInfo.GetCultureInfo("en-US"));
+                    culture = new CultureInfo("en-US", true);
                     break;
             }
-            #pragma warning disable CS8603 // Possible null reference return.
-            return settings.NextExecutionTime;
-            #pragma warning restore CS8603 // Possible null reference return.
+            return settings.NextExecutionTime = date.ToString("g", culture); ;
         }
     }
 }

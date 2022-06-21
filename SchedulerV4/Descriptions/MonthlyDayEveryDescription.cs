@@ -16,9 +16,9 @@ namespace SchedulerV4.Descriptions
                         settings.Description = "Ocurre cada dia " + settings.NumDay + " cada " + settings.NumMonths + " meses. El planificador se usará el " + settings.CalculatedDate.ToString("d", CultureInfo.GetCultureInfo("es-ES")) + " a las " +
                             settings.CalculatedDate.ToString("t", CultureInfo.GetCultureInfo("es-ES")) + " cada " + settings.OccursEveryFreq + " " + freqTime + " empezando el " + settings.StartingLimit.ToString("d", CultureInfo.GetCultureInfo("es-ES"));
                         break;
-                    case (int)LanguageEnum.Language.EnglishUK:
-                        settings.Description = "Occurs every " + settings.NumDay + "day every " + settings.NumMonths + " months. Schedule will be used on " + settings.CalculatedDate.ToString("d", CultureInfo.GetCultureInfo("en-UK")) + " at " +
-                            settings.CalculatedDate.ToString("t", CultureInfo.GetCultureInfo("en-UK")) + " every " + settings.OccursEveryFreq + " " + freqTime + " starting on " + settings.StartingLimit.ToString("d", CultureInfo.GetCultureInfo("en-UK"));
+                    case (int)LanguageEnum.Language.EnglishGB:
+                        settings.Description = "Occurs every " + settings.NumDay + "day every " + settings.NumMonths + " months. Schedule will be used on " + settings.CalculatedDate.ToString("d", CultureInfo.GetCultureInfo("en-GB")) + " at " +
+                            settings.CalculatedDate.ToString("t", CultureInfo.GetCultureInfo("en-GB")) + " every " + settings.OccursEveryFreq + " " + freqTime + " starting on " + settings.StartingLimit.ToString("d", CultureInfo.GetCultureInfo("en-GB"));
                         break;
                     case (int)LanguageEnum.Language.EnglishUS:
                         settings.Description = "Occurs every " + settings.NumDay + "day every " + settings.NumMonths + " months. Schedule will be used on " + settings.CalculatedDate.ToString("d", CultureInfo.GetCultureInfo("en-US")) + " at " +

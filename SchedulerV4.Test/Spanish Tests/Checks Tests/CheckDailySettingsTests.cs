@@ -3,7 +3,7 @@ using SchedulerV4.Checks;
 using System;
 using Xunit;
 
-namespace SchedulerV4.Test.Checks_Test
+namespace SchedulerV4.Test.Spanish_Tests.Checks_Tests
 {
     public  class CheckDailySettingsTests
     {
