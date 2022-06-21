@@ -7,7 +7,7 @@ namespace SchedulerV4.Test.Spanish_Tests.Calculates_Tests
 {
     public class CalculateMonthlyDayDailyOnceTests
     {
-        private readonly CultureInfo culture = new("es-ES");
+        private readonly CultureInfo culture = new("es-ES", true);
 
         //-------------------- NOT IN LIMITS -------------------//
         [Fact]

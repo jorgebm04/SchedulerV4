@@ -7,7 +7,7 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
 {
     public class CalculateOnceTests
     {
-        private readonly CultureInfo culture = new("en-GB");
+        private readonly CultureInfo culture = new("en-GB",true);
 
         [Fact]
         public void Validate_calculated_date_type_once()

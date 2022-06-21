@@ -7,7 +7,7 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
 {
     public class CalculateMonthlyDayDailyOnceTests
     {
-        private readonly CultureInfo culture = new("en-GB");
+        private readonly CultureInfo culture = new("en-GB",true);
 
         //-------------------- NOT IN LIMITS -------------------//
         [Fact]
@@ -40,7 +40,7 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             //Arrange
             var settings = new Settings
             {
-                Language = 0,
+                Language = 1,
                 CurrentDate = new System.DateTime(2022, 06, 09, 8, 10, 0),
                 Occurs = 1,
                 NumDay = 15,

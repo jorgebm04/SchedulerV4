@@ -12,7 +12,7 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Checks_Tests
             //Arrange
             var settings = new Settings
             {
-                Language = 0,
+                Language = 1,
             };
             //Act
             bool result = LanguageChecker.CheckLanguage(settings);

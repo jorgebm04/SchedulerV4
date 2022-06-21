@@ -7,7 +7,7 @@ namespace SchedulerV4.Test.EnglishUS_Tests.Calculates_Tests
 {
     public class CalculateRecurringDailyOnceTests
     {
-        private readonly CultureInfo culture = new("en-US");
+        private readonly CultureInfo culture = new("en-US", true);
 
         [Fact]
         public void Validate_calculated_date_type_recurring_daily_occurs_once()

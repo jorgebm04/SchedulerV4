@@ -9,7 +9,7 @@ namespace SchedulerV4.Test.Spanish_Tests.Checks_Tests
 {
     public class CheckOnceSettingsTests
     {
-        private readonly CultureInfo culture = new("es-ES");
+        private readonly CultureInfo culture = new("es-ES", true);
 
         [Fact]
         public void Validate_incorrect_current_date_checker_settings()
