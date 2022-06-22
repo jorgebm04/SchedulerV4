@@ -59,7 +59,6 @@ namespace SchedulerV4.Calculate
             }
             settings.CalculatedDate = new DateTime(settings.CurrentDate.Year, settings.CurrentDate.Month, calculatedDay.Day,
                     calculated.Hour, calculated.Minute, calculated.Second);
-            settings.NextExecutionTime = settings.CalculatedDate.ToString("dd/MM/yyyy HH:mm");
         }
     }
 }

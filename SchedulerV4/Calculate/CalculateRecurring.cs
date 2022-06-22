@@ -44,9 +44,7 @@ namespace SchedulerV4.Calculate
                     MonthlyTheEveryDescription.SetDescription(settings);
                     
                 }
-
             }
-
         }
     }
 }

@@ -23,8 +23,8 @@
 
         private static void SetNextExecutionTime(Settings settings, DateTime calculated)
         {
-            settings.NextExecutionTime = settings.CurrentDate.ToString("dd/MM/yyyy") + " " + calculated.ToString("HH:mm");
-            settings.CalculatedDate = DateTime.ParseExact(settings.NextExecutionTime, "dd/MM/yyyy HH:mm", null);
+            string newDate = settings.CurrentDate.ToString("dd/MM/yyyy") + " " + calculated.ToString("HH:mm");
+            settings.CalculatedDate = DateTime.ParseExact(newDate, "dd/MM/yyyy HH:mm", null);
         }
     }
 }

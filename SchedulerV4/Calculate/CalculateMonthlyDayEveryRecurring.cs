@@ -54,7 +54,6 @@ namespace SchedulerV4.Calculate
                 return;
             }
             settings.CalculatedDate = calDate;
-            settings.NextExecutionTime = settings.CalculatedDate.ToString("dd/MM/yyyy HH:mm");
         }
     }
 }
