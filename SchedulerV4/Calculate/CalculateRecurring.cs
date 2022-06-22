@@ -6,7 +6,19 @@ namespace SchedulerV4.Calculate
     {
         public static void Calculate(Settings settings)
         {
-            if (settings.Occurs != 0)
+            if (settings.Occurs == 0)
+            {
+                if (settings.OccursOnceAt)
+                {
+                    CalculateDailyRecurring.CalculateNextExecutionTime(settings);
+                    DailyRecurringDescription.SetDescription(settings);
+                    return;
+                }
+                CalculateEveryRecurring.CalculateNextExecutionTime(settings);
+                EveryRecurringDescription.SetDescription(settings);
+                
+            }
+            else
             {
                 if (settings.Day)
                 {
@@ -14,12 +26,11 @@ namespace SchedulerV4.Calculate
                     {
                         CalculateMonthlyDayOnceRecurring.CalculateNextExecutionTime(settings);
                         MonthlyDayOnceDescription.SetDescription(settings);
+                        return;
                     }
-                    else
-                    {
-                        CalculateMonthlyDayEveryRecurring.CalculateNextExecutionTime(settings);
-                        MonthlyDayEveryDescription.SetDescription(settings);
-                    }
+                    CalculateMonthlyDayEveryRecurring.CalculateNextExecutionTime(settings);
+                    MonthlyDayEveryDescription.SetDescription(settings);
+                    
                 }
                 else
                 {
@@ -27,27 +38,13 @@ namespace SchedulerV4.Calculate
                     {
                         CalculateMonthlyTheOnceRecurring.CalculateNextExecutionTime(settings);
                         MonthlyTheOnceDescription.SetDescription(settings);
+                        return;
                     }
-                    else
-                    {
-                        CalculateMonthlyTheEveryRecurring.CalculateNextExecutionTime(settings);
-                        MonthlyTheEveryDescription.SetDescription(settings);
-                    }
+                    CalculateMonthlyTheEveryRecurring.CalculateNextExecutionTime(settings);
+                    MonthlyTheEveryDescription.SetDescription(settings);
+                    
                 }
 
-            }
-            else
-            {
-                if (settings.OccursOnceAt)
-                {
-                    CalculateDailyRecurring.CalculateNextExecutionTime(settings);
-                    DailyRecurringDescription.SetDescription(settings);
-                }
-                else
-                {
-                    CalculateEveryRecurring.CalculateNextExecutionTime(settings);
-                    EveryRecurringDescription.SetDescription(settings);
-                }
             }
 
         }

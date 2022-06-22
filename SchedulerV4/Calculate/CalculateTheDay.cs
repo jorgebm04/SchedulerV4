@@ -114,9 +114,6 @@
                             count--;
                             break;
                         case DayOfWeek.Friday:
-                            pre = pre.AddDays(1);
-                            count--;
-                            break;
                         case DayOfWeek.Saturday:
                             pre = pre.AddDays(1);
                             count--;
