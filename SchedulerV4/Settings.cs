@@ -1,5 +1,8 @@
-﻿namespace SchedulerV4
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace SchedulerV4
 {
+    [ExcludeFromCodeCoverage]
     public class Settings
     {
         public DateTime CurrentDate { get; set; }

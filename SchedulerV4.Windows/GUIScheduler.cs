@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using SchedulerV4.Calculate;
 using SchedulerV4.Checks;
@@ -6,6 +7,7 @@ using SchedulerV4.Enums;
 
 namespace SchedulerV4.Windows
 {
+    [ExcludeFromCodeCoverage]
     public partial class GuiScheduler : Form
     {
         public GuiScheduler()

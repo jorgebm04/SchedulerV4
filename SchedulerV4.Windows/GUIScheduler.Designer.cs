@@ -1,4 +1,6 @@
-﻿namespace SchedulerV4.Windows
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace SchedulerV4.Windows
 {
     partial class GuiScheduler
     {

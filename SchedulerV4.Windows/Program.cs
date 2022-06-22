@@ -1,5 +1,8 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace SchedulerV4.Windows
 {
+    [ExcludeFromCodeCoverage]
     internal static class Program
     {
         /// <summary>
