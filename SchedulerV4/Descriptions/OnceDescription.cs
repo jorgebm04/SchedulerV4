@@ -16,12 +16,12 @@ namespace SchedulerV4.Descriptions
                     settings.Description = "Ocurre una vez. El planificador se usara el " + settings.CalculatedDate.ToString("d", culture) + " a las " +
                         settings.CalculatedDate.ToString("t", culture);
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     culture = new CultureInfo("en-GB", true);
                     settings.Description = "Occurs once. Schedule will be used on " + settings.CalculatedDate.ToString("d", culture) + " at " +
                         settings.CalculatedDate.ToString("t", culture);
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     culture = new CultureInfo("en-US", true);
                     settings.Description = "Occurs once. Schedule will be used on " + settings.CalculatedDate.ToString("d", culture) + " at " +
                         settings.CalculatedDate.ToString("t", culture);

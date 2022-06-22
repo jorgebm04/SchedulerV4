@@ -1,6 +1,6 @@
 ﻿namespace SchedulerV4.Windows
 {
-    partial class GUIScheduler
+    partial class GuiScheduler
     {
         /// <summary>
         ///  Required designer variable.
@@ -100,7 +100,7 @@
             // 
             // currentDateDateTimePicker
             // 
-            this.currentDateDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.currentDateDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm tt";
             this.currentDateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.currentDateDateTimePicker.Location = new System.Drawing.Point(85, 24);
             this.currentDateDateTimePicker.Name = "currentDateDateTimePicker";
@@ -168,7 +168,7 @@
             // 
             // onceTimeAtDateTimePicker
             // 
-            this.onceTimeAtDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.onceTimeAtDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm tt";
             this.onceTimeAtDateTimePicker.Enabled = false;
             this.onceTimeAtDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.onceTimeAtDateTimePicker.Location = new System.Drawing.Point(85, 53);
@@ -454,8 +454,9 @@
             // 
             // endingAtDateTimePicker
             // 
+            this.endingAtDateTimePicker.CustomFormat = "HH:mm tt";
             this.endingAtDateTimePicker.Enabled = false;
-            this.endingAtDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.endingAtDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.endingAtDateTimePicker.Location = new System.Drawing.Point(228, 84);
             this.endingAtDateTimePicker.Name = "endingAtDateTimePicker";
             this.endingAtDateTimePicker.ShowUpDown = true;
@@ -474,8 +475,9 @@
             // 
             // startingAtDateTimePicker
             // 
+            this.startingAtDateTimePicker.CustomFormat = "HH:mm tt";
             this.startingAtDateTimePicker.Enabled = false;
-            this.startingAtDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.startingAtDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.startingAtDateTimePicker.Location = new System.Drawing.Point(64, 84);
             this.startingAtDateTimePicker.Name = "startingAtDateTimePicker";
             this.startingAtDateTimePicker.ShowUpDown = true;
@@ -516,8 +518,9 @@
             // 
             // occursOnceAtDateTimePicker
             // 
+            this.occursOnceAtDateTimePicker.CustomFormat = "HH:mm tt";
             this.occursOnceAtDateTimePicker.Enabled = false;
-            this.occursOnceAtDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.occursOnceAtDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.occursOnceAtDateTimePicker.Location = new System.Drawing.Point(184, 27);
             this.occursOnceAtDateTimePicker.Name = "occursOnceAtDateTimePicker";
             this.occursOnceAtDateTimePicker.ShowUpDown = true;
@@ -634,7 +637,7 @@
             this.nextExecutionTimeLabel.TabIndex = 0;
             this.nextExecutionTimeLabel.Text = "Next execution time";
             // 
-            // GUIScheduler
+            // GuiScheduler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -645,7 +648,7 @@
             this.Controls.Add(this.monthlyConfigurationGroupBox);
             this.Controls.Add(this.configurationGroupBox);
             this.Controls.Add(this.inputGroupBox);
-            this.Name = "GUIScheduler";
+            this.Name = "GuiScheduler";
             this.Text = "Scheduler";
             this.inputGroupBox.ResumeLayout(false);
             this.inputGroupBox.PerformLayout();

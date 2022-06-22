@@ -7,7 +7,7 @@ namespace SchedulerV4.Test.Spanish_Tests.Calculates_Tests
 {
     public class CalculateRecurringDailyOnceTests
     {
-        private readonly CultureInfo culture = new("es-ES", true);
+        private readonly CultureInfo _culture = new("es-ES", true);
 
         [Fact]
         public void Validate_calculated_date_type_recurring_daily_occurs_once()
@@ -25,9 +25,9 @@ namespace SchedulerV4.Test.Spanish_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 05, 27, 14, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -46,9 +46,9 @@ namespace SchedulerV4.Test.Spanish_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 05, 28, 8, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
     }
 }

@@ -1,14 +1,14 @@
+using System.Globalization;
 using SchedulerV4.Calculate;
 using SchedulerV4.Checks;
 using SchedulerV4.Descriptions;
 using SchedulerV4.Enums;
-using System.Globalization;
 
 namespace SchedulerV4.Windows
 {
-    public partial class GUIScheduler : Form
+    public partial class GuiScheduler : Form
     {
-        public GUIScheduler()
+        public GuiScheduler()
         {
             InitializeComponent();
         }
@@ -93,42 +93,32 @@ namespace SchedulerV4.Windows
                     CalculateRecurring.Calculate(settings);
                     break;
             }
-            nextExecutionTimeTextBox.Text = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings,settings.CalculatedDate);
+            nextExecutionTimeTextBox.Text = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings,settings.CalculatedDate);
             descriptionTextBox.Text = settings.Description;
         }
 
         private void LanguageSettings(object sender, EventArgs e)
         {
+            CultureInfo ci = CultureInfo.CurrentCulture;
             switch (languageComboBox.SelectedIndex)
             {
-                case (int)LanguageEnum.Language.Español:
-                    currentDateDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
-                    onceTimeAtDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
-                    occursOnceAtDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
-                    startingAtDateTimePicker.CustomFormat = "HH:mm";
-                    endingAtDateTimePicker.CustomFormat = "HH:mm";
-                    startLimitDateTimePicker.CustomFormat = "dd/MM/yyyy";
-                    endLimitDateTimePicker.CustomFormat = "dd/MM/yyyy";
+                case (int)LanguageEnum.Language.EspaÃ±ol:
+                    ci = new CultureInfo("es-ES", true);
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
-                    currentDateDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
-                    onceTimeAtDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
-                    occursOnceAtDateTimePicker.CustomFormat = "dd/MM/yyyy HH:mm";
-                    startingAtDateTimePicker.CustomFormat = "HH:mm";
-                    endingAtDateTimePicker.CustomFormat = "HH:mm";
-                    startLimitDateTimePicker.CustomFormat = "dd/MM/yyyy";
-                    endLimitDateTimePicker.CustomFormat = "dd/MM/yyyy";
+                case (int)LanguageEnum.Language.EnglishGb:
+                    ci = new CultureInfo("en-GB", true);
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
-                    currentDateDateTimePicker.CustomFormat = "MM/dd/yyyy HH:mm";
-                    onceTimeAtDateTimePicker.CustomFormat = "MM/dd/yyyy HH:mm";
-                    occursOnceAtDateTimePicker.CustomFormat = "MM/dd/yyyy HH:mm";
-                    startingAtDateTimePicker.CustomFormat = "HH:mm";
-                    endingAtDateTimePicker.CustomFormat = "HH:mm";
-                    startLimitDateTimePicker.CustomFormat = "MM/dd/yyyy";
-                    endLimitDateTimePicker.CustomFormat = "MM/dd/yyyy";
+                case (int)LanguageEnum.Language.EnglishUs:
+                    ci = new CultureInfo("en-US", true);
                     break;
             }
+            currentDateDateTimePicker.CustomFormat = ci.DateTimeFormat.ShortDatePattern + " " + ci.DateTimeFormat.ShortTimePattern;
+            onceTimeAtDateTimePicker.CustomFormat = ci.DateTimeFormat.ShortDatePattern + " " + ci.DateTimeFormat.ShortTimePattern;
+            occursOnceAtDateTimePicker.CustomFormat = ci.DateTimeFormat.ShortTimePattern;
+            startingAtDateTimePicker.CustomFormat = ci.DateTimeFormat.ShortTimePattern;
+            endingAtDateTimePicker.CustomFormat = ci.DateTimeFormat.ShortTimePattern;
+            startLimitDateTimePicker.CustomFormat = ci.DateTimeFormat.ShortDatePattern;
+            endLimitDateTimePicker.CustomFormat = ci.DateTimeFormat.ShortDatePattern;
         }
 
         private void TypeSettings(object sender, EventArgs e)

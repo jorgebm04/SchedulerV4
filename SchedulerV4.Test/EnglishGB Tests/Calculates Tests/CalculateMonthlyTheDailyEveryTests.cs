@@ -7,7 +7,7 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
 {
     public class CalculateMonthlyTheDailyEveryTests
     {
-        private readonly CultureInfo culture = new("en-GB",true);
+        private readonly CultureInfo _culture = new("en-GB",true);
 
         //-------------------- NOT IN LIMITS -------------------//
         [Fact]
@@ -61,9 +61,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 01, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
         //-------------------------------- FIRST TESTS -----------------------------------//
         [Fact]
@@ -90,9 +90,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 01, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -119,9 +119,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 02, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -147,9 +147,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 03, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -175,9 +175,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 04, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -203,9 +203,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 05, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -231,9 +231,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 06, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -259,9 +259,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 07, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -287,9 +287,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 01, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -315,9 +315,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 01, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -343,9 +343,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 06, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         //-------------------------------- SECOND TESTS -----------------------------------//
@@ -372,9 +372,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 13, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -400,9 +400,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 14, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -428,9 +428,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 10, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -456,9 +456,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 09, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         /**
@@ -487,9 +487,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 9, 9, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -515,9 +515,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 9, 8, 30, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -543,9 +543,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 11, 8, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -571,9 +571,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 10, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -599,9 +599,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 11, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -627,9 +627,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 12, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -655,9 +655,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 02, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -683,9 +683,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 02, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -711,9 +711,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 07, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         //-------------------------------- THIRD TESTS -----------------------------------//
@@ -740,9 +740,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 20, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -768,9 +768,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 21, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -796,9 +796,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 15, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -824,9 +824,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 16, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -852,9 +852,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 17, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -880,9 +880,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 18, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -908,9 +908,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 19, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -936,9 +936,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 03, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -964,9 +964,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 03, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -992,9 +992,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 11, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         //-------------------------------- FOURTH TESTS -----------------------------------//
@@ -1021,9 +1021,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 27, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1049,9 +1049,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 28, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1077,9 +1077,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 22, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1105,9 +1105,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 23, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1133,9 +1133,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 24, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1161,9 +1161,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 25, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1189,9 +1189,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 26, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1217,9 +1217,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 04, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1245,9 +1245,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 08, 04, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1273,9 +1273,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 12, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         //-------------------------------- LAST TESTS -----------------------------------//
@@ -1302,9 +1302,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 27, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1330,9 +1330,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 28, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1358,9 +1358,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 29, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1386,9 +1386,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 30, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1414,9 +1414,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 24, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1442,9 +1442,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 25, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1470,9 +1470,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 26, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1498,9 +1498,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 30, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1526,9 +1526,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 30, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
 
         [Fact]
@@ -1554,9 +1554,9 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 06, 26, 10, 0, 0);
             //Act
             CalculateRecurring.Calculate(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
     }
 }

@@ -7,7 +7,7 @@ namespace SchedulerV4.Test.EnglishUS_Tests.Calculates_Tests
 {
     public class CalculateOnceTests
     {
-        private readonly CultureInfo culture = new("en-US", true);
+        private readonly CultureInfo _culture = new("en-US", true);
 
         [Fact]
         public void Validate_calculated_date_type_once()
@@ -22,9 +22,9 @@ namespace SchedulerV4.Test.EnglishUS_Tests.Calculates_Tests
             var expectedDate = new System.DateTime(2022, 05, 30, 14, 0, 0);
             //Act
             CalculateOnce.CalculateNextExecutionTime(settings);
-            var result = NextExecutionTimeFormatter.SetNextExeccutionTimeFormat(settings, settings.CalculatedDate);
+            var result = NextExecutionTimeFormatter.SetNextExecutionTimeFormat(settings, settings.CalculatedDate);
             //Assert
-            result.Should().BeEquivalentTo(expectedDate.ToString("g", culture));
+            result.Should().BeEquivalentTo(expectedDate.ToString("g", _culture));
         }
     }
 }

@@ -12,10 +12,10 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "horas";
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     result = "hours";
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     result = "hours";
                     break;
             }
@@ -30,10 +30,10 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "minutos";
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     result = "minutes";
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     result = "minutes";
                     break;
             }
@@ -48,10 +48,10 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "segundos";
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     result = "seconds";
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     result = "seconds";
                     break;
             }

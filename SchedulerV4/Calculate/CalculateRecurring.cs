@@ -6,20 +6,7 @@ namespace SchedulerV4.Calculate
     {
         public static void Calculate(Settings settings)
         {
-            if (settings.Occurs == 0)
-            {
-                if (settings.OccursOnceAt)
-                {
-                    CalculateDailyRecurring.CalculateNextExecutionTime(settings);
-                    DailyRecurringDescription.SetDescription(settings);
-                }
-                else 
-                { 
-                    CalculateEveryRecurring.CalculateNextExecutionTime(settings);
-                    EveryRecurringDescription.SetDescription(settings);
-                }
-            }
-            else
+            if (settings.Occurs != 0)
             {
                 if (settings.Day)
                 {
@@ -28,7 +15,7 @@ namespace SchedulerV4.Calculate
                         CalculateMonthlyDayOnceRecurring.CalculateNextExecutionTime(settings);
                         MonthlyDayOnceDescription.SetDescription(settings);
                     }
-                    else 
+                    else
                     {
                         CalculateMonthlyDayEveryRecurring.CalculateNextExecutionTime(settings);
                         MonthlyDayEveryDescription.SetDescription(settings);
@@ -47,9 +34,22 @@ namespace SchedulerV4.Calculate
                         MonthlyTheEveryDescription.SetDescription(settings);
                     }
                 }
-                
+
             }
-            
+            else
+            {
+                if (settings.OccursOnceAt)
+                {
+                    CalculateDailyRecurring.CalculateNextExecutionTime(settings);
+                    DailyRecurringDescription.SetDescription(settings);
+                }
+                else
+                {
+                    CalculateEveryRecurring.CalculateNextExecutionTime(settings);
+                    EveryRecurringDescription.SetDescription(settings);
+                }
+            }
+
         }
     }
 }

@@ -29,7 +29,6 @@
         public DateTime CalculatedDate { get; set; }
         public bool NeedToAddDay { get; set; }
         public int LastDay { get; set; }
-        public String? DayOfTheWeek { get; set; }
         public bool IsOverLimit { get; set; }
         public int Language { get; set; }
     }

@@ -21,7 +21,7 @@ namespace SchedulerV4.Test.EnglishGB_Tests.Checks_Tests
         }
 
         [Fact]
-        public void Validate_languge_not_selected()
+        public void Validate_language_not_selected()
         {
             //Arrange
             var settings = new Settings

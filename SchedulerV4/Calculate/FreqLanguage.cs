@@ -12,10 +12,10 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "primer";
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     result = "first";
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     result = "first";
                     break;
             }
@@ -30,10 +30,10 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "segundo";
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     result = "second";
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     result = "second";
                     break;
             }
@@ -48,10 +48,10 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "tercer";
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     result = "third";
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     result = "third";
                     break;
             }
@@ -66,10 +66,10 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "cuarto";
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     result = "fourth";
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     result = "fourth";
                     break;
             }
@@ -84,10 +84,10 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     result = "último";
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     result = "last";
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     result = "last";
                     break;
             }

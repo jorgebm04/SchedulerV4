@@ -9,7 +9,7 @@ namespace SchedulerV4.Test.Spanish_Tests.Checks_Tests
 {
     public class CheckOnceSettingsTests
     {
-        private readonly CultureInfo culture = new("es-ES", true);
+        private readonly CultureInfo _culture = new("es-ES", true);
 
         [Fact]
         public void Validate_incorrect_current_date_checker_settings()
@@ -37,8 +37,8 @@ namespace SchedulerV4.Test.Spanish_Tests.Checks_Tests
             //Act
             OnceDescription.SetDescription(settings);
             //Assert
-            settings.Description.Should().BeEquivalentTo("Ocurre una vez. El planificador se usara el " + settings.CalculatedDate.ToString("d", culture) + " a las " +
-                        settings.CalculatedDate.ToString("t", culture));
+            settings.Description.Should().BeEquivalentTo("Ocurre una vez. El planificador se usara el " + settings.CalculatedDate.ToString("d", _culture) + " a las " +
+                        settings.CalculatedDate.ToString("t", _culture));
         }
 
         [Fact]

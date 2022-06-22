@@ -5,7 +5,7 @@ namespace SchedulerV4.Calculate
 {
     public static class NextExecutionTimeFormatter
     {
-        public static string SetNextExeccutionTimeFormat(Settings settings, DateTime date)
+        public static string SetNextExecutionTimeFormat(Settings settings, DateTime date)
         {
             CultureInfo culture = CultureInfo.CurrentCulture;
             switch (settings.Language)
@@ -13,10 +13,10 @@ namespace SchedulerV4.Calculate
                 case (int)LanguageEnum.Language.Español:
                     culture = new CultureInfo("es-ES",true);
                     break;
-                case (int)LanguageEnum.Language.EnglishGB:
+                case (int)LanguageEnum.Language.EnglishGb:
                     culture = new CultureInfo("en-GB", true);
                     break;
-                case (int)LanguageEnum.Language.EnglishUS:
+                case (int)LanguageEnum.Language.EnglishUs:
                     culture = new CultureInfo("en-US", true);
                     break;
             }
